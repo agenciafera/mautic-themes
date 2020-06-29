@@ -1,0 +1,104 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+  <div class="logo" data-slot-container="1">
+    <div data-slot="image">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/logo.jpg')}}" alt="" >
+    </div>
+  </div>
+  <section class="landing">
+    <div class="landing-content" style="background-image: url('{{getAssetUrl('themes/'~template~'/assets/images/banner.jpg')}}');">
+      <div class="grid-container">
+        <div class="layout-group">
+          <div class="division -7">
+            <div class="data layout-group">
+              <div class="division" data-slot-container="1">
+                <i class="far fa-calendar-alt"></i><span data-slot="text">13  NOV</span>
+              </div>
+              <div class="division" data-slot-container="1">
+                <i class="far fa-clock"></i><span data-slot="text">às 15h</span>
+              </div>
+            </div>
+            <div class="content">
+              <div data-slot-container="1">
+                <h1 data-slot="text">Webinar com o Prof. Stephen Langendorfer</h1>
+                <p data-slot="text">Steve baterá um papo com Gustavo Borges e estará apresentando de forma inédita no Brasil sobre variados temas relacionados a natação</p>
+              </div>
+              <div class="p-top-2" data-slot-container="1">
+                <div class="button m-right-1" data-slot="button" data-param-padding-top="5" data-param-button-size="1"
+              data-param-link-text="Conteúdo" data-param-href="http://" data-param-float="1" data-param-background-color="" data-param-color="ffffff">
+                <a href="javascript:;" onclick="$('html,body').animate({scrollTop: $('#conteudo').offset().top},'slow');" style="padding: 10px 40px;font-weight: bold;letter-spacing: 1px;background: transparent;border: 2px solid #FFF;
+                color: #fff;margin-bottom:20px;display:block;border-radius: 50px;font-size: 20px;text-decoration: none">Conteúdo</a>
+              </div>
+              <div class="button" data-slot="button" data-param-padding-top="5" data-param-button-size="1"
+              data-param-link-text="Palestrante"  onclick="$('html,body').animate({scrollTop: $('#palestrante').offset().top},'slow');" data-param-href="http://" data-param-float="1" data-param-background-color="" data-param-color="ffffff">
+                <a href="#" style="padding: 10px 40px;font-weight: bold;letter-spacing: 1px;background: transparent;border: 2px solid #FFF;
+                color: #fff;margin-bottom:20px;display:block;border-radius: 50px;font-size: 20px;text-decoration: none">Palestrante</a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="division -5">
+            <div class="form">
+              <div class="form-title" data-slot-container="1">
+                <h3 class="-form-title" data-slot="text">
+                Preencha seus dados para participar do Webinar com o Prof. Stephen Langerdorfer
+                </h3>
+              </div>
+              <div class="form-content fera-form"  data-slot-container="1">
+                <div data-slot="text">Aqui vai o form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topics" data-slot-container="1">
+      <div class="grid-container">
+        <div class="layout-group" id="conteudo">
+          <div class="division -4">
+            <h2 data-slot="text">Listamos ao lado 5 motivos pelos quais você deve assistir ao webinar:</h2>
+          </div>
+          <div class="division -4" data-slot="text">
+            <p>1 — A história e origem de seu envolvimento com a aprendizagem de natação</p>
+            <p>2 — Desenvolvimento, avaliação e operação de programas aquáticos orientados ao aprendizado seguro e altamente motivador para crianças; </p>
+            <p>3 — A importância do domínio das competências aquáticas e a relação com outras atividades aquáticas</p>
+          </div>
+          <div class="division -4" data-slot="text">
+            <p>4 — Prontidão aquática e habilidades aquáticas básicas e suas importâncias no processo de ensino de natação</p>
+            <p>5 — A importância da divisão por níveis, formas de avaliação e acompanhamento, estratégias de aulas de resultado e a relação de quantidade de professores x alunos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="palestrante">
+      <div class="grid-container">
+        <div class="layout-group">
+          <div class="division -4" id="palestrante"  data-slot-container="1">
+            <div data-slot="image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/images/avatar.png')}}">
+            </div>
+          </div>
+          <div class="division -8">
+            <div class="content-palestrante" data-slot-container="1">
+              <h3 data-slot="text"><span>Convidado:</span>
+              Stephen Langendorfer</h3>
+              <p data-slot="text">Líder mundial em estudos sobre desenvolvimento aquático e motor, autor do principal publicação mundial em ensino de natação para professores de natação - Aquatic Readiness - Prontidão Aquática</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fera-ag_container" data-slot-container="1">
+      <div>
+        <p>feito por <a href="https://fera.ag/?utm_source=site-runner&amp;utm_medium=referral&amp;utm_campaign=clientes" class="brand" target="_blank"><i class="fera-ag_icon"></i>F E R A</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+{% endblock %}

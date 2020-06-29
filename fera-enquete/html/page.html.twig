@@ -1,0 +1,37 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+  <section class="banner" data-slot-container="1">
+    <div class="mobile" data-slot="image">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner-mobile.jpg')}}" alt="">
+    </div>
+    <div class="desktop" data-slot="image">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner.jpg')}}" alt="">
+    </div>
+  </section>
+  <section class="content">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="division -12">
+          <div class="form">
+            <div class="form-title" data-slot-container="1">
+              <h3 class="-form-title" data-slot="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            </div>
+            <div class="form-content fera-form" data-slot-container="1">
+              <div data-slot="text">Aqui vai o form</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="m-top-4">
+  <footer class="footer m-top-2" data-section-wrapper="1">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="-center division" data-slot-container="1">
+          <p data-slot="text">© Bluefit 2018. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

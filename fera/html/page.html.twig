@@ -1,0 +1,50 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+  <section class="banner" data-slot-container="1">
+    <div class="mobile" data-slot="image">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner-mobile.jpg')}}" alt="">
+    </div>
+    <div class="desktop" data-slot="image">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner.jpg')}}" alt="">
+    </div>
+  </section>
+  <section class="content">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="division -6 m-top-10 m-bottom-10" data-slot-container="1">
+          <h2><span data-slot="text">LOREM IPSUM SIT DOLOR AMET</span></h2>
+          <div class="text" data-slot="text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean dapibus sit amet tellus nec tempus. Etiam et libero dictum, eleifend erat sit amet,
+              fermentum quam. Nulla luctus pharetra est, a cursus felis semper auctor.
+              Fusce porttitor massa id tempor rutrum. In consequat sapien non libero vestibulum ultrices.
+              Vivamus vulputate pellentesque lacus et mattis.
+              Proin magna sem, elementum ut interdum euismod, commodo placerat arcu.
+              Phasellus tristique arcu bibendum scelerisque accumsan.</p>
+          </div>
+        </div>
+        <div class="division -6">
+          <div class="form">
+            <div class="form-title" data-slot-container="1">
+              <h3 class="-form-title" data-slot="text">Mensagem de destaque</h3>
+            </div>
+            <div class="form-content fera-form" data-slot-container="1">
+              <div data-slot="text">Aqui vai o form</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="m-top-4">
+  <footer class="footer m-top-2" data-section-wrapper="1">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="-center division" data-slot-container="1">
+          <p data-slot="text">©2018. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

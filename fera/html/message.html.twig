@@ -1,0 +1,37 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+  <section class="banner" data-section-wrapper="1">
+    <div class="mobile">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner-mobile.jpg')}}" alt="" data-slot="image">
+    </div>
+    <div class="desktop">
+      <img src="{{getAssetUrl('themes/'~template~'/assets/images/banner.jpg')}}" alt="" data-slot="image">
+    </div>
+  </section>
+  <section class="content" data-section-wrapper="1">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="division -6 m-top-10 m-bottom-10" data-slot-container="1">
+          <div class="text" data-slot="text">
+                <div class="well text-center">
+                    {{ message|raw }}
+                    {% if content is defined %}
+                    <div class="text-left">{{ content|raw }}</div>
+                    {% endif %}
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="m-top-4">
+  <footer class="footer m-top-2" data-section-wrapper="1">
+    <div class="grid-container">
+      <div class="layout-group">
+        <div class="-center division" data-slot-container="1">
+          <p data-slot="text">© Monday Academia 2018. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "name": "Template FERA",
+  "author": "FERA",
+  "authorUrl": "https://fera.ag",
+  "features": [
+    "page",
+    "email",
+    "form"
+  ]
+}

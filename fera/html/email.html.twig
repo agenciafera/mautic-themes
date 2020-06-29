@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{subject}</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+    <style media="all" type="text/css">
+    @media all {
+      *{
+        padding: 0;
+        font-family: 'Lato', Arial, sans-serif;
+      }
+      td{
+        position:  relative;
+      }
+      div[data-slot-focus]{
+        pointer-events: none;
+      }
+    }
+
+    @media only screen and (max-width: 620px) {
+      table[class=body] h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+      }
+      table[class=body] h2 {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+      }
+      table[class=body] h3 {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+      }
+      table[class=body] p,
+      table[class=body] ul,
+      table[class=body] ol,
+      table[class=body] td,
+      table[class=body] span,
+      table[class=body] a {
+        font-size: 16px !important;
+      }
+      table[class=body] .wrapper,
+      table[class=body] .article {
+        padding: 10px !important;
+      }
+      table[class=body] .content {
+        padding: 0 !important;
+      }
+      table[class=body] .container {
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      table[class=body] .header {
+        margin-bottom: 10px !important;
+      }
+      table[class=body] .main {
+        border-left-width: 0 !important;
+        border-radius: 0 !important;
+        border-right-width: 0 !important;
+      }
+      table[class=body] .btn table {
+        width: 100% !important;
+      }
+      table[class=body] .btn a {
+        width: 100% !important;
+      }
+      table[class=body] .img-responsive {
+        height: auto !important;
+        max-width: 100% !important;
+        width: auto !important;
+      }
+      table[class=body] .alert td {
+        border-radius: 0 !important;
+        padding: 10px !important;
+      }
+      table[class=body] .span-2,
+      table[class=body] .span-3 {
+        max-width: none !important;
+        width: 100% !important;
+      }
+      table[class=body] .receipt {
+        width: 100% !important;
+      }
+    }
+    </style>
+  </head>
+  <body class="" style="font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; -ms-text-size-adjust: 100%;  -webkit-text-size-adjust: 100%; background-color: #f6f6f6; margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" align="center" cellspacing="0" class="body"
+    style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt;width: 100%; background-color: #f6f6f6;text-align:center;"
+    width="100%" bgcolor="#f6f6f6" data-section-wrapper="1">
+      <tr>
+        <td class="container" align="center" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; padding: 10px;" valign="top">
+      <center>
+          <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 600px; padding: 0px;">
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table class="main" style="width: 600px;border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: transparent;" width="600" data-section="1">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr data-slot-container="1">
+                <td data-slot="image">
+                  <a href="" target="_blank" style="display: block;">
+                  <img src="{{ getAssetUrl('themes/'~template~'/assets/images/header.jpg', null, null, true) }}" alt="" style="display: block;" /></a>
+                </td>
+              </tr>
+              <tr data-slot-container="1" style="font-size: 14px; vertical-align: top; box-sizing: border-box;background: #ffffff;">
+               <td data-slot="text" style="padding: 20px 60px;">
+                <p style="line-height: 30px;font-size: 20px;color:#666667;">
+                  <strong>Olá {contactfield=firstname},</strong>
+                </p>
+                <p style="line-height: 30px;font-size: 16px;color:#666667;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Mauris laoreet dolor id lacus tempus semper.<br>
+                Nullam id bibendum massa. Pellentesque pulvinar ex diam, eu lobortis ligula consequat eget.
+                </p>
+               </td>
+              </tr>
+              <tr data-slot-container="1" style="font-size: 14px; text-align: center; vertical-align: top; box-sizing: border-box;background: #ffffff;">
+               <td style="padding: 20px 120px;">
+                <div class="button" data-slot="button" data-param-padding-top="5" data-param-button-size="1"
+                data-param-link-text="Call to action" data-param-href="http://" data-param-float="1" data-param-background-color="#e36443" data-param-color="ffffff">
+                  <a href="#" style="padding: 10px 20px;background: #e36443;
+                  color: #fff;margin-bottom:20px;display:block;border-radius: 3px;font-size: 20px;text-decoration: none">Call to action</a>
+                </div>
+                </td>
+              </tr>
+              <tr data-slot-container="1">
+                <td style="padding:0 20px;" data-slot="text">
+                  <p style="text-align: center;"><a href="http://mondayacademia.com.br/"
+                    style="font-size: 13px;color: #666;font-weight: bold;text-decoration: none;text-transform: uppercase;">site.com.br</a><br /></p>
+                </td>
+              </tr>
+              <tr data-slot-container="1">
+                <td data-slot="image">
+                  <a href="" target="_blank" style="display: block;">
+                  <img src="{{ getAssetUrl('themes/'~template~'/assets/images/header.jpg', null, null, true) }}" alt="" style="display: block;" /></a>
+                </td>
+              </tr>
+              <tr data-slot-container="1">
+                <td data-slot="text">
+                  <div data-empty="true" style="text-align: center;margin-bottom:20px;">
+                    <a href="{unsubscribe_url}" style="color: rgb(41, 105, 176);font-size: 12px;padding-top: 10px;">Não quer mais receber nosso e-mails? Clique aqui</a>
+                  </div>
+                  <div style="text-align: center;margin-bottom:20px;">
+                    <a href="https://#" style="font-size: 14px;color: rgb(71, 85, 119);">https://www.site.com.br</a>
+                  </div>
+                </td>
+              </tr>
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+            <!-- END FOOTER -->
+
+<!-- END CENTERED WHITE CONTAINER --></div>
+      </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
